@@ -89,3 +89,7 @@ python -m venv .venv
 - `pdf.py` – extração e normalização do texto de arquivos PDF, com OCR opcional
 - `db.py` – histórico em SQLite (`historico.db`, criado automaticamente)
 - `tests/` – testes, inclusive da interface (`pip install -r requirements.txt -r requirements-dev.txt` e depois `pytest`)
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE).
