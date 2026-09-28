@@ -1,5 +1,7 @@
 # Corretor de Textos
 
+[![Testes](https://github.com/lmaciel0/corretor-de-textos/actions/workflows/testes.yml/badge.svg)](https://github.com/lmaciel0/corretor-de-textos/actions/workflows/testes.yml)
+
 Sistema local e gratuito de revisão de textos de ficção em português do Brasil, usando LanguageTool (ou uma IA local, opcional), Streamlit e SQLite. Funciona offline e não usa nenhuma API paga.
 
 ## Revisão com IA local (opcional)
@@ -60,7 +62,7 @@ PDFs escaneados (imagem) não têm texto. Se o [OCRmyPDF](https://ocrmypdf.readt
 
 ## Requisitos
 
-- Python 3.10+
+- Python 3.12+
 - Java 17+ (o LanguageTool roda localmente em Java)
 - Opcional: [Ollama](https://ollama.com) com o modelo `gemma4:e4b-it-qat`, para a revisão com IA (16 GB de RAM recomendados)
 
@@ -86,4 +88,4 @@ python -m venv .venv
 - `docx_io.py` – leitura e escrita de `.docx` preservando a formatação
 - `pdf.py` – extração e normalização do texto de arquivos PDF, com OCR opcional
 - `db.py` – histórico em SQLite (`historico.db`, criado automaticamente)
-- `tests/` – testes, inclusive da interface (`pip install -r requirements-dev.txt` e depois `pytest`)
+- `tests/` – testes, inclusive da interface (`pip install -r requirements.txt -r requirements-dev.txt` e depois `pytest`)
